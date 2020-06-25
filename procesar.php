@@ -1,11 +1,11 @@
 <?php
  
 //require_once 'vendor/autoload.php'; // You have to require the library from your Composer vendor folder
-//require __DIR__ .  '/vendor/autoload.php';
+require __DIR__ .  '/vendor/autoload.php';
  
  
 
-//MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607"); // On Sandbox
+MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607"); // On Sandbox
 
 
 echo 'hola mundo';
