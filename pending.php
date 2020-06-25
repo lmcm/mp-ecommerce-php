@@ -1,6 +1,6 @@
 <?php
 
-echo "pago pendiente";
-echo parse_url($url, PHP_URL_QUERY);
+echo "pago pendiente 33";
+var_dump(parse_url($url, PHP_URL_QUERY));
 
 ?>
