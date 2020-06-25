@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#createPreference").on("click", function () {
 
-        var title = $("#title").text().trim().replace();
+        var title = $("#title").text().replace("$").trim();
         var price = $("#price").html().trim();
         var unit = $("#unit").html().trim();
         var img = $("#img").html().trim();
@@ -20,7 +20,7 @@ $(document).ready(function () {
                 unit: unit,
                 img: img
             }),
-            contentType: "application/json",
+            contentType: "pplication/x-www-form-urlencoded",
             dataType: 'html',
             success: function (data) {
                 console.log("data " , data)
