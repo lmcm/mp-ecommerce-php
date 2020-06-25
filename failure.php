@@ -1,6 +1,6 @@
 <?php
 
 echo "pago FALLIDO";
-echo $_GET['q'];  //Ou
+echo parse_url($url, PHP_URL_QUERY);
 
 ?>
