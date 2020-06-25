@@ -8,8 +8,6 @@ MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb
 $preference = new MercadoPago\Preference();
 $preference->external_reference = "am.er.90@hotmail.com";
 
-
-
 $item1 = new MercadoPago\Item();
 $item1->id = "1234";
 $item1->title = $_POST['title'];
@@ -34,10 +32,11 @@ $payer->address = array(
 );
 
 
+
 $preference->items = array($item1);
 $preference->payer = $payer;
 $preference->payment_methods = array(
-    "excluded_payment_methods" =>array(
+    "excluded_payment_methods" => array(
         array("id" => "amex"), // no amex
     ),
     "excluded_payment_types" => array(
@@ -46,6 +45,11 @@ $preference->payment_methods = array(
     "installments" => 6,
 );
 
+$preference->back_urls = array(
+    "success" => "https: //lcastillo90-mp-commerce-php.herokuapp.com/success.php",
+    "failure" => "https: //lcastillo90-mp-commerce-php.herokuapp.com/failure.php",
+    "pending" => "https: //lcastillo90-mp-commerce-php.herokuapp.com/pending.php"
+);
 
 $preference->save(); # Save the preference and send the HTTP Request to create
 
