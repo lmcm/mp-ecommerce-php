@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$("#createPreference").on("click", function() {
                                                    
-        var title = $("#title").text().trim();
+        var title = $("#title").text().trim().replace();
         var price = $("#price").html().trim();
         var unit = $("#unit").html().trim();
         var img = $("#img").html().trim();
