@@ -121,7 +121,7 @@
                                         <div class="as-producttile-title">
                                             <h3 class="as-producttile-name">
                                                 <p class="as-producttile-tilelink">
-                                                    <span data-ase-truncate="2" id="title"><?php echo $_POST['title'] ?></span>
+                                                    <span data-ase-truncate="2" id="title"><?php echo trim($_POST['title']) ?></span>
                                                 </p>
 
                                             </h3>
