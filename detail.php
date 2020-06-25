@@ -12,6 +12,8 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 
+    <script src="./assets/detail.js"></script>
+
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
     <link rel="stylesheet" href="./assets/category.css" media="screen, print">
@@ -19,7 +21,6 @@
     <link rel="stylesheet" href="./assets/merch-tools.css" media="screen, print">
 
     <link rel="stylesheet" href="./assets/fonts" media="">
-    <script src="./assets/detail.js"></script>
     <style>
         .as-filter-button-text {
             font-size: 26px;
@@ -102,6 +103,7 @@
                                                 <div class="as-tilegallery-element as-image-selected">
                                                     <div class=""></div>
                                                     <img src="./assets/003.jpg" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="content:-webkit-image-set(url(<?php echo $_POST['img'] ?>) 2x);">
+                                                    <div id="img" class="" style="display : none"><?php echo $_POST['img'] ?></div>
                                                 </div>
                                                 
                                             </div>
@@ -119,19 +121,20 @@
                                         <div class="as-producttile-title">
                                             <h3 class="as-producttile-name">
                                                 <p class="as-producttile-tilelink">
-                                                    <span data-ase-truncate="2"><?php echo $_POST['title'] ?></span>
+                                                    <span data-ase-truncate="2" id="title"><?php echo $_POST['title'] ?></span>
                                                 </p>
 
                                             </h3>
                                         </div>
-                                        <h3 >
-                                            <?php echo $_POST['price'] ?>
+                                        <h3 id="price">
+                                            <?php echo "$" . $_POST['price'] ?>
                                         </h3>
-                                        <h3 >
-                                            <?php echo "$" . $_POST['unit'] ?>
-                                        </h3>
+                                        <p id="unit">
+                                        Cantidad:
+                                            <?php echo  $_POST['unit'] ?>
+                                        </p>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <button id="createPreference" type="submit" class="mercadopago-button" >Pagar</button>
                                 </div>
                             </div>
                         </div>
