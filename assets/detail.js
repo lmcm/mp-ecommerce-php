@@ -14,12 +14,13 @@ $(document).ready(function () {
         $.ajax({
             type: 'POST',
             url: 'procesar.php',
-            data: {
+            data: JSON.stringify({
                 title: title,
                 price: price,
                 unit: unit,
                 img: img
-            },
+            }),
+            contentType: "application/json",
             dataType: 'html',
             success: function (data) {
                 console.log("data " , data)
