@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	$("#createPreference").on("click", function() {
                                                    
-        var title = $("#title").text();
-        var price = $("#price").html();
-        var unit = $("#unit").html();
-        var img = $("#img").html();
+        var title = $("#title").text().trim;
+        var price = $("#price").html().trim;
+        var unit = $("#unit").html().trim;
+        var img = $("#img").html().trim;
         console.log("title",title)
         console.log("price",price)
         console.log("unit",unit)

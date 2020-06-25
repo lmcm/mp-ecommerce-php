@@ -127,7 +127,7 @@
                                             </h3>
                                         </div><?php echo "$"?>
                                         <h3 id="price">
-                                            <?php  $_POST['price'] ?>
+                                            <?php echo  $_POST['price'] ?>
                                         </h3>
                                         <p id="unit">
                                             <?php echo  $_POST['unit'] ?>
