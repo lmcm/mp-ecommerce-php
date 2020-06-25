@@ -10,7 +10,7 @@ MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb
 
 echo 'hola mundo';
 //MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607"); // Either Production or SandBox AccessToken
-/*
+ 
 $preference = new MercadoPago\Preference();
 
 
@@ -42,7 +42,7 @@ $preference->save(); # Save the preference and send the HTTP Request to create
 # Return the HTML code for button
 
 echo "<a href='$preference->sandbox_init_point'> Pagar </a>";
-*/
+ 
 
 
 ?> 
