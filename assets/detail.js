@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$("#createPreference").on("click", function() {
         $.ajax({
             type : 'POST',
-            url : './procesar.php',
+            url : 'procesar.php',
             data : {
                 lang : "mike"
             },
