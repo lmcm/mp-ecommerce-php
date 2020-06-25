@@ -46,14 +46,15 @@ $preference->payment_methods = array(
 );
 
 $preference->back_urls = array(
-    "success" => "https: //lcastillo90-mp-commerce-php.herokuapp.com/success.php",
-    "failure" => "https: //lcastillo90-mp-commerce-php.herokuapp.com/failure.php",
-    "pending" => "https: //lcastillo90-mp-commerce-php.herokuapp.com/pending.php"
+    "success" => "https://lcastillo90-mp-commerce-php.herokuapp.com/success.php",
+    "failure" => "https://lcastillo90-mp-commerce-php.herokuapp.com/failure.php",
+    "pending" => "https://lcastillo90-mp-commerce-php.herokuapp.com/pending.php"
 );
 
-$preference->save(); # Save the preference and send the HTTP Request to create
+//$preference->save(); # Save the preference and send the HTTP Request to create
 
 # Return the HTML code for button
 
 //echo "<a href='$preference->sandbox_init_point'> Pagar </a>";
+var_dump($preference);
 echo $preference->sandbox_init_point;
