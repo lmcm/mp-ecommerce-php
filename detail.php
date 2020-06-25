@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/merch-tools.css" media="screen, print">
 
     <link rel="stylesheet" href="./assets/fonts" media="">
+    <script src="./assets/detail.js"></script>
     <style>
         .as-filter-button-text {
             font-size: 26px;
