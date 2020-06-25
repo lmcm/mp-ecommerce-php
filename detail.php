@@ -130,7 +130,7 @@
                                             <?php echo "$" . $_POST['price'] ?>
                                         </h3>
                                         <p id="unit">
-                                        Cantidad:
+                                        Cantidad mikeee:
                                             <?php echo  $_POST['unit'] ?>
                                         </p>
                                     </div>
