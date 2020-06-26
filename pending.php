@@ -130,23 +130,23 @@
                                         </div>
                                         Collection id
                                         <h3 >
-                                            <?php echo "$ ".$_GET['collection_id'] ?>
+                                            <?php echo  $_GET['collection_id'] ?>
                                         </h3>
                                         Collection status
                                         <h3 >
-                                            <?php echo "$ ".$_GET['collection_status'] ?>
+                                            <?php echo  $_GET['collection_status'] ?>
                                         </h3>
                                         External referencia
                                         <h3 >
-                                            <?php echo "$ ".$_GET['external_reference'] ?>
+                                            <?php echo  $_GET['external_reference'] ?>
                                         </h3>
                                         Tipo pago
                                         <h3 >
-                                            <?php echo "$ ".$_GET['payment_type'] ?>
+                                            <?php echo  $_GET['payment_type'] ?>
                                         </h3>
                                         Referencia
                                         <h3 >
-                                            <?php echo "$ ".$_GET['preference_id'] ?>
+                                            <?php echo  $_GET['preference_id'] ?>
                                         </h3>
                                     </div>
                                      
