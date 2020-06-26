@@ -1,11 +1,11 @@
 <?php
-
+/*
 echo 'title =>'. $_POST['title'] .'</br>';
 echo 'unit=>'. $_POST['unit'] .'</br>';
 echo 'img=>'. $_POST['img'] .'</br>';
-echo 'price=>'. $_POST['price'] .'</br>';
-//require_once 'vendor/autoload.php'; // You have to require the library from your Composer vendor folder
-/*
+echo 'price=>'. $_POST['price'] .'</br>';*/
+require_once 'vendor/autoload.php'; // You have to require the library from your Composer vendor folder
+
 require __DIR__ . '/vendor/autoload.php';
 
 MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607"); // On Sandbox
@@ -61,5 +61,5 @@ $preference->back_urls = array(
 # Return the HTML code for button
 
 //echo "<a href='$preference->sandbox_init_point'> Pagar </a>";
-var_dump($preference);*/
+//var_dump($preference);
 echo $preference->sandbox_init_point;
