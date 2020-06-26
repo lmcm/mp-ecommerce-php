@@ -5,13 +5,15 @@ $(document).ready(function () {
         var price = $("#price").html().trim();
         var unit = $("#unit").html().trim();
         var img = $("#img").html().trim();
+        price = price.replace("$","");
         console.log("title", title)
         console.log("price", price)
         console.log("unit", unit)
         console.log("img", img)
 
-        price = price.replace("$","");
+        
 
+        /*
         $.ajax({
             type: 'POST',
             url: 'procesar.php',
@@ -29,6 +31,6 @@ $(document).ready(function () {
 
 
             }
-        });
+        });*/
     });
 });
