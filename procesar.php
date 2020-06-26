@@ -7,10 +7,7 @@ $preference = new MercadoPago\Preference();
 $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
 
 
-/*  
-
-$string = preg_replace('/\s+/', '', $_POST['price']);
-
+ 
 
 
 $item1 = new MercadoPago\Item();
@@ -18,20 +15,12 @@ $item1->id = "1234";
 $item1->title = $_POST['title'];
 $item1->description = "Dispositivo móvil de Tienda e-commerce";
 $item1->quantity = 1;
-$item2->picture_url = $_SERVER['SERVER_NAME']."/".$_POST['img'];
-$item1->unit_price =preg_replace('/\s+/', '', $_POST['price'])
+$item2->picture_url = $protocol.$_SERVER['SERVER_NAME']."/".$_POST['img'];
+$item1->unit_price = preg_replace('/\s+/', '', $_POST['price']);
+ 
  
 
-
-$item2 = new MercadoPago\Item();
-$item2->id = "56789";
-$item2->title = $_POST['title'];
-$item2->description = "Dispositivo móvil de Tienda e-commerce";
-$item2->quantity = 1;
-$item2->picture_url = $_SERVER['SERVER_NAME']."/".$_POST['img'];
-$item2->unit_price =preg_replace('/\s+/', '', $_POST['price'])
-
-$preference->items = array($item1, $item2);
+$preference->items = array($item1);
 
 $payer = new MercadoPago\Payer();
 $payer->name = "Lalo";
@@ -70,11 +59,11 @@ $preference->back_urls = array(
 $preference->save();  
  
 echo  $preference->sandbox_init_point;
-*/
+ /*
 
 echo $protocol.$_SERVER['SERVER_NAME']."/".$_POST['img'];
 echo '</br>';
-echo preg_replace('/\s+/', '', $_POST['price']);
+echo preg_replace('/\s+/', '', $_POST['price']);*/
 
 
 ?> 

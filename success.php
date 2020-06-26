@@ -133,14 +133,28 @@ var_dump(parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY));
 
                                             </h3>
                                         </div>
-                                        <h3 id="price">
-                                            <?php echo "$ ". $_POST['price'] ?>
+                                        Collection id
+                                        <h3 >
+                                            <?php echo "$ ".$_GET['collection_id'] ?>
                                         </h3>
-                                        <p id="unit">
-                                            <?php echo  $_POST['unit'] ?>
-                                        </p>
+                                        Collection status
+                                        <h3 >
+                                            <?php echo "$ ".$_GET['collection_status'] ?>
+                                        </h3>
+                                        External referencia
+                                        <h3 >
+                                            <?php echo "$ ".$_GET['external_reference'] ?>
+                                        </h3>
+                                        Tipo pago
+                                        <h3 >
+                                            <?php echo "$ ".$_GET['payment_type'] ?>
+                                        </h3>
+                                        Referencia
+                                        <h3 >
+                                            <?php echo "$ ".$_GET['preference_id'] ?>
+                                        </h3>
                                     </div>
-                                    <button id="createPreference" type="submit" class="mercadopago-button" >Pagar</button>
+                                     
                                 </div>
                             </div>
                         </div>
