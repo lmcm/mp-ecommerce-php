@@ -48,6 +48,8 @@ $preference->payment_methods = array(
   ),
   "installments" => 6
 );
+$preference->auto_return = "approved";
+$preference->external_reference = "am.er.90@hotmail.com";
 
 $preference->back_urls = array(
   "success" => "https://lcastillo90-mp-commerce-php.herokuapp.com/success.php",
