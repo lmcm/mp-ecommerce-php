@@ -21,7 +21,7 @@ $item2->title = $_POST['title'];
 $item2->description = "Dispositivo móvil de Tienda e-commerce";
 $item2->quantity = 1;
 $item2->picture_url = $_POST['img'];
-$item2->unit_price =1500;// $_POST['price'];
+$item2->unit_price = 1500;// $_POST['price'];
 
 $preference->items = array($item1, $item2);
 
