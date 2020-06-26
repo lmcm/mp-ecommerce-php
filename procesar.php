@@ -56,6 +56,8 @@ $preference->back_urls = array(
 
  
 
+$preference->notification_url = "https://lcastillo90-mp-commerce-php.herokuapp.com/notification.php";
+
 $preference->save();  
  
 echo  $preference->sandbox_init_point;
