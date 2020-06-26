@@ -1,19 +1,9 @@
 <?php
- 
-//require_once 'vendor/autoload.php'; // You have to require the library from your Composer vendor folder
+
 require __DIR__ .  '/vendor/autoload.php';
- 
- 
+MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607");
 
-MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607"); // On Sandbox
-
-
- 
-//MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607"); // Either Production or SandBox AccessToken
- 
 $preference = new MercadoPago\Preference();
-
-
 
 $item1 = new MercadoPago\Item();
 $item1->id = "1234";
@@ -30,7 +20,7 @@ $item2->id = "56789";
 $item2->title = $_POST['title'];
 $item2->description = "Dispositivo móvil de Tienda e-commerce";
 $item2->quantity = 1;
-//$item2->picture_url = $_POST['img'];
+$item2->picture_url = $_POST['img'];
 $item2->unit_price =1500;// $_POST['price'];
 
 $preference->items = array($item1, $item2);

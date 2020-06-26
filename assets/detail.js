@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#createPreference").on("click", function () {
 
         var title = $("#title").text().trim();
-        var price = $("#price").html().replace("$").trim();
+        var price = $("#price").html().trim();
         var unit = $("#unit").html().trim();
         var img = $("#img").html().trim();
         console.log("title", title)
@@ -10,6 +10,7 @@ $(document).ready(function () {
         console.log("unit", unit)
         console.log("img", img)
 
+        price = price.replace("$","");
 
         $.ajax({
             type: 'POST',
