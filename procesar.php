@@ -4,8 +4,13 @@ require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607");
 
 $preference = new MercadoPago\Preference();
+$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
 
-/*
+
+/*  
+
+$string = preg_replace('/\s+/', '', $_POST['price']);
+
 
 
 $item1 = new MercadoPago\Item();
@@ -14,7 +19,7 @@ $item1->title = $_POST['title'];
 $item1->description = "Dispositivo móvil de Tienda e-commerce";
 $item1->quantity = 1;
 $item2->picture_url = $_SERVER['SERVER_NAME']."/".$_POST['img'];
-$item1->unit_price = $_POST['price'];
+$item1->unit_price =preg_replace('/\s+/', '', $_POST['price'])
  
 
 
@@ -24,7 +29,7 @@ $item2->title = $_POST['title'];
 $item2->description = "Dispositivo móvil de Tienda e-commerce";
 $item2->quantity = 1;
 $item2->picture_url = $_SERVER['SERVER_NAME']."/".$_POST['img'];
-$item2->unit_price = $_POST['price'];
+$item2->unit_price =preg_replace('/\s+/', '', $_POST['price'])
 
 $preference->items = array($item1, $item2);
 
@@ -67,9 +72,9 @@ $preference->save();
 echo  $preference->sandbox_init_point;
 */
 
-echo $_SERVER['SERVER_NAME']."/".$_POST['img'];
+echo $protocol.$_SERVER['SERVER_NAME']."/".$_POST['img'];
 echo '</br>';
-echo $_POST['price'];
+echo preg_replace('/\s+/', '', $_POST['price']);
 
 
 ?> 
