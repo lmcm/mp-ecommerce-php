@@ -20,7 +20,7 @@ $(document).ready(function () {
                 unit: unit,
                 img: img
             }),
-            contentType: "pplication/x-www-form-urlencoded",
+            contentType: "application/x-www-form-urlencoded",
             dataType: 'html',
             success: function (data) {
                 console.log("data " , data)
