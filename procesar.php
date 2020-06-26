@@ -40,17 +40,20 @@ $payer->address = array(
 );
 
 $preference->payment_methods = array(
-  "excluded_payment_types" => array(
-    array("id" => "credit_card")
+  "excluded_payment_methods" => array(
+      array("id" => "amex"), // no amex
   ),
-  "installments" => 12
+  "excluded_payment_types" => array(
+      array("id" => "atm"), //no atm
+  ),
+  "installments" => 6
 );
-/*
+
 $preference->back_urls = array(
   "success" => "https://lcastillo90-mp-commerce-php.herokuapp.com/success.php",
   "failure" => "https://lcastillo90-mp-commerce-php.herokuapp.com/failure.php",
   "pending" => "https://lcastillo90-mp-commerce-php.herokuapp.com/pending.php"
-);*/
+);
 
  
 
