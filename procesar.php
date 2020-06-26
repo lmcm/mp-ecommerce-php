@@ -47,7 +47,7 @@ $preference->payment_methods = array(
     "excluded_payment_types" => array(
         array("id" => "atm"), //no atm
     ),
-    "installments" => 6,
+    "installments" => 6
 );
 
 $preference->back_urls = array(
@@ -55,8 +55,12 @@ $preference->back_urls = array(
     "failure" => "https://lcastillo90-mp-commerce-php.herokuapp.com/failure.php",
     "pending" => "https://lcastillo90-mp-commerce-php.herokuapp.com/pending.php"
 );
+try{
+  $preference->save(); # Save the preference and send the HTTP Request to create
+}catch(Exception $e ){
+  var_dump($e->getMessage());
+}
 
-//$preference->save(); # Save the preference and send the HTTP Request to create
 
 # Return the HTML code for button
 
