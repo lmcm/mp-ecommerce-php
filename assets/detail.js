@@ -13,7 +13,7 @@ $(document).ready(function () {
 
         
 
-        /*
+         
         $.ajax({
             type: 'POST',
             url: 'procesar.php',
@@ -27,10 +27,10 @@ $(document).ready(function () {
             dataType: 'html',
             success: function (data) {
                 console.log("data " , data)
-                window.location.href = data;
+                //window.location.href = data;
 
 
             }
-        });*/
+        });
     });
 });
