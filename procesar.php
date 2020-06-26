@@ -4,7 +4,7 @@ echo 'title =>'. $_POST['title'] .'</br>';
 echo 'unit=>'. $_POST['unit'] .'</br>';
 echo 'img=>'. $_POST['img'] .'</br>';
 echo 'price=>'. $_POST['price'] .'</br>';*/
-require_once 'vendor/autoload.php'; // You have to require the library from your Composer vendor folder
+//require_once 'vendor/autoload.php'; // You have to require the library from your Composer vendor folder
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -20,8 +20,19 @@ $item1->description = "Dispositivo móvil de Tienda e-commerce";
 $item1->quantity = $_POST['unit'];
 $item1->picture_url = $_POST['img'];
 $item1->unit_price = $_POST['price'];
-$item1->currency_id = "MXN";
+ 
 
+
+$item2 = new MercadoPago\Item();
+$item2->id = "56789";
+$item2->title = $_POST['title'];
+$item2->description = "Dispositivo móvil de Tienda e-commerce";
+$item2->quantity = $_POST['unit'];
+$item2->picture_url = $_POST['img'];
+$item2->unit_price = $_POST['price'];
+ 
+
+/*
 $payer = new MercadoPago\Payer();
 $payer->name = "Lalo";
 $payer->surname = "Landa";
@@ -38,7 +49,7 @@ $payer->address = array(
 
 
 
-$preference->items = array($item1);
+$preference->items = array($item1,$item2);
 $preference->payer = $payer;
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
@@ -54,7 +65,8 @@ $preference->back_urls = array(
     "success" => "https://lcastillo90-mp-commerce-php.herokuapp.com/success.php",
     "failure" => "https://lcastillo90-mp-commerce-php.herokuapp.com/failure.php",
     "pending" => "https://lcastillo90-mp-commerce-php.herokuapp.com/pending.php"
-);
+);*/
+$preference->items = array($item1,$item2);
 try{
   $preference->save(); # Save the preference and send the HTTP Request to create
 }catch(Exception $e ){
