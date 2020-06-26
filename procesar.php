@@ -42,7 +42,7 @@ $preference->save(); # Save the preference and send the HTTP Request to create
 # Return the HTML code for button
 
 echo "<a href='$preference->sandbox_init_point'> Pagar </a>";
-*/
+
 
 
 ?> 
