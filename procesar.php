@@ -8,7 +8,7 @@ require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607"); // On Sandbox
 
 
-echo 'hola mundo';
+ 
 //MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607"); // Either Production or SandBox AccessToken
  
 $preference = new MercadoPago\Preference();
@@ -35,7 +35,7 @@ $preference->payment_methods = array(
   "installments" => 12
 );
 
-$preference->external_reference = rand() ;
+ 
 
 $preference->save(); # Save the preference and send the HTTP Request to create
 
