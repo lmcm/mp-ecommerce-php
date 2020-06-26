@@ -70,7 +70,7 @@ $preference->items = array($item1,$item2);
 try{
   $preference->save(); # Save the preference and send the HTTP Request to create
 }catch(Exception $e ){
-  var_dump($e->getMessage());
+  echo $e->getMessage();
 }
 
 
