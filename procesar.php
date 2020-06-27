@@ -1,9 +1,8 @@
 <?php
 
 require __DIR__ .  '/vendor/autoload.php';
-MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607");
-
-//MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
+MercadoPago\SDK::setAccessToken("APP_USR-8058997674329963-062418-89271e2424bb1955bc05b1d7dd0977a8-592190948");
+MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
 
 $preference = new MercadoPago\Preference();
