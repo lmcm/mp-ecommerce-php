@@ -11,7 +11,8 @@ if (!empty($data)) {
         case 'payment.created':
             echo "DATA ID " . $notification["data"]["id"];
             $payment = MercadoPago\Payment::find_by_id($notification["data"]["id"]);
-            echo var_dump($payment);
+            echo 'status=>'.$payment['status'].'</br>';
+            echo 'status_detail=>'.$payment['status_detail'];
             $api->request(json_encode($payment));
             break;
     }
