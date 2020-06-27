@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#createPreference2").on("click", function () {
+    $("#createPreference").on("click", function () {
 
         var title = $("#title").text().trim();
         var price = $("#price").html().trim();
