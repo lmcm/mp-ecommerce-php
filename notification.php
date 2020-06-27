@@ -28,7 +28,7 @@ if (!empty($data)) {
             //echo 'status_detail=>'.$payment['status_detail'];
             $api->request(json_encode($payment));
             //echo "DATA ID expor  " . $notification["data"]["id"];
-            echo $payment;
+            echo var_dum($payment);
             break;
     }
 }
