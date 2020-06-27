@@ -26,9 +26,9 @@ if (!empty($data)) {
             $payment = MercadoPago\Payment::find_by_id($notification["data"]["id"]);
             //echo 'status=>'.$payment['status'].'</br>';
             //echo 'status_detail=>'.$payment['status_detail'];
-            //$api->request($payment);
+            $api->request($payment->order);
             echo "DATA ID expor  " . $notification["data"]["id"];
-            echo var_export($payment);
+            echo var_export($payment->order);
             break;
     }
 }
