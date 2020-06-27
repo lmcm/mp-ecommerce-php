@@ -26,7 +26,7 @@ if (!empty($data)) {
             $payment = MercadoPago\Payment::get($notification["data"]["id"]);//find_by_id($notification["data"]["id"]);
             //echo 'status=>'.$payment['status'].'</br>';
             //echo 'status_detail=>'.$payment['status_detail'];
-            $api->reques($payment);
+            //$api->reques($payment);
             //echo "DATA ID expor  " . $notification["data"]["id"];
             echo var_dum($payment);
             break;
