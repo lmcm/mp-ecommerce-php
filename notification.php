@@ -1,4 +1,17 @@
+
 <?php
+class API
+{
+    public function request($info)
+    {
+        $handle = curl_init('https://hookb.in/oXVXXLQkPDu1mmLaRmqM');
+        curl_setopt($handle, CURLOPT_POST, 1);
+        curl_setopt($handle, CURLOPT_POSTFIELDS, $info);
+        curl_setopt($handle, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+        curl_exec($handle);
+    }
+}
+
 require __DIR__ . '/vendor/autoload.php';
 $data = file_get_contents('php://input');
 $api = new API();
@@ -20,14 +33,4 @@ if (!empty($data)) {
     }
 }
 
-class API
-{
-    public function request($info)
-    {
-        $handle = curl_init('https://hookb.in/oXVXXLQkPDu1mmLaRmqM');
-        curl_setopt($handle, CURLOPT_POST, 1);
-        curl_setopt($handle, CURLOPT_POSTFIELDS, $info);
-        curl_setopt($handle, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
-        curl_exec($handle);
-    }
-}
+
