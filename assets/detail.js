@@ -9,7 +9,7 @@ $(document).ready(function () {
         $('#exampleModal').modal('toggle');
 
         $('#exampleModal').on('shown.bs.modal', function() {
-            $(this).find('iframe').attr('src','http://www.google.com')
+            $(this).find('iframe').attr('src','https://www.w3schools.com/html/html_iframe.asp')
         })  
         /*$('#myModal').modal('toggle');   
         $.ajax({
