@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 $data = file_get_contents('php://input');
-$api = new API();
+//$api = new API();
 //($api->request($data);
 
 if (!empty($data)) {
@@ -17,7 +17,7 @@ if (!empty($data)) {
             break;
     }
 }
-
+/*
 class API
 {
     public function request($data)
@@ -29,4 +29,4 @@ class API
         curl_setopt($handle, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
         $result = curl_exec($handle);
     }
-}
+}*/
