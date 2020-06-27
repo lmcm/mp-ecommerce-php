@@ -3,6 +3,9 @@
 require __DIR__ .  '/vendor/autoload.php';
 MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607");
 
+//MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
+
+
 $preference = new MercadoPago\Preference();
 $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
 

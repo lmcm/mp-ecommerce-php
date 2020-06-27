@@ -17,6 +17,7 @@ $data = file_get_contents('php://input');
 $api = new API();
 $api->request($data);
 
+//MercadoPago\SDK::setIntegratorId("INTEGRATOR_ID");
 if (!empty($data)) {
     $notification = json_decode($data, true);
     MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607");

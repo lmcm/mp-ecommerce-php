@@ -137,6 +137,7 @@
                                     </div>
                                     <button id="createPreference" type="submit" class="mercadopago-button" >Pagar</button>
                                 </div>
+                                <a href="<?php echo $preference->init_point; ?>">Pagar con Mercado Pago</a>
                             </div>
                         </div>
                     </div>
