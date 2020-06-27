@@ -12,7 +12,7 @@ if (!empty($data)) {
             echo "DATA ID " . $notification["data"]["id"];
             $payment = MercadoPago\Payment::find_by_id($notification["data"]["id"]);
             echo var_dump($payment);
-            $api->request($payment);
+            $api->request(json_encode($payment));
             break;
     }
 }
