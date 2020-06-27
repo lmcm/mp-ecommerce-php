@@ -1,11 +1,18 @@
 <?php
 
  
-$data = file_get_contents('php://input');
-file_put_contents('data.log', print_r($data, true) . __LINE__, FILE_APPEND);
-file_put_contents('data2.log', print_r(array("sistyemas"=>"kskskks"), true) . __LINE__, FILE_APPEND);
-echo file_put_contents("test.txt","Hello World. Testing!");
+$handle = curl_init('https://hookb.in/oXVXXLQkPDu1mmLaRmqM');
 
-echo 'mike';
+$data = [
+    'name' => 'John'
+];
+
+$encodedData = json_encode($data);
+
+curl_setopt($handle, CURLOPT_POST, 1);
+curl_setopt($handle, CURLOPT_POSTFIELDS, $encodedData);
+curl_setopt($handle, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+
+$result = curl_exec($handle);
 
 ?>
