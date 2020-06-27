@@ -7,7 +7,7 @@ echo $data;
 if (!empty($data)) {
     $notification = json_decode($data);
     //MercadoPago\SDK::setAccessToken("TEST-7927007857849250-062405-afb9bb9c52903c3deb1ad9e8116e5aa0-590656607");
-    echo "notificacoon 2"; //. $notification["action"];
+    echo "notificacoon 3 ->" . $notification["action"];
     /*switch ($notification["action"]) {
         case 'payment.created':
             echo "DATA ID ". $notification["data"]["id"];
