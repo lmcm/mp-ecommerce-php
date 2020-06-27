@@ -27,8 +27,8 @@ if (!empty($data)) {
             //echo 'status=>'.$payment['status'].'</br>';
             //echo 'status_detail=>'.$payment['status_detail'];
             //$api->request($payment);
-            echo "DATA ID " . $notification["data"]["id"];
-            echo 'status '.$payment['status'];
+            echo "DATA ID expor  " . $notification["data"]["id"];
+            echo var_export($payment);
             break;
     }
 }
