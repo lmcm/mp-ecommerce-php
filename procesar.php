@@ -62,7 +62,7 @@ $preference->notification_url = "https://lcastillo90-mp-commerce-php.herokuapp.c
 
 $preference->save();  
  
-echo  $preference->sandbox_init_point;
+echo  $preference->init_point;
  /*
 
 echo $protocol.$_SERVER['SERVER_NAME']."/".$_POST['img'];
