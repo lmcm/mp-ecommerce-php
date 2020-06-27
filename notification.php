@@ -11,9 +11,11 @@ if (!empty($data)) {
         case 'payment.created':
             //echo "DATA ID " . $notification["data"]["id"];
             $payment = MercadoPago\Payment::find_by_id($notification["data"]["id"]);
-            echo 'status=>'.$payment['status'].'</br>';
-            echo 'status_detail=>'.$payment['status_detail'];
-            $api->request($payment);
+            //echo 'status=>'.$payment['status'].'</br>';
+            //echo 'status_detail=>'.$payment['status_detail'];
+            //$api->request($payment);
+            echo "DATA ID " . $notification["data"]["id"];
+            echo 'status '.$payment['status'];
             break;
     }
 }
