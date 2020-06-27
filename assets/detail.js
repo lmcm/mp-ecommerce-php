@@ -5,13 +5,15 @@ $(document).ready(function () {
         var price = $("#price").html().trim();
         var unit = $("#unit").html().trim();
         var img = $("#img").html().trim();
-        price = price.replace("$","");      
-        $('#exampleModal').modal('toggle');
+        price = price.replace("$","");
+        console.log("title", title)
+        console.log("price", price)
+        console.log("unit", unit)
+        console.log("img", img)
 
-        $('#exampleModal').on('shown.bs.modal', function() {
-            $(this).find('iframe').attr('src','https://www.w3schools.com/html/html_iframe.asp')
-        })  
-        /*$('#myModal').modal('toggle');   
+        
+
+         
         $.ajax({
             type: 'POST',
             url: 'procesar.php',
@@ -25,10 +27,10 @@ $(document).ready(function () {
             dataType: 'html',
             success: function (data) {
                 
-                //window.location.href = data;
+                window.location.href = data;
 
 
             }
-        });*/
+        });
     });
 });
