@@ -84,10 +84,10 @@
                             <div class="row as-search-navbar" id="as-search-navbar" style="width: auto;">
                                 <div class="as-accessories-filter-tile column large-6 small-3">
 
-                                    <div class="" aria-expanded="true" aria-controls="as-search-filters"  >
+                                    <div class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
                                         <a href="/" class=" as-filter-button-text">
                                             Smartphones
-                                        </a>
+                                        </h2>
                                     </div>
 
 
