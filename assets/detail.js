@@ -1,19 +1,13 @@
 $(document).ready(function () {
-    $("#createPreference").on("click", function () {
+    $("#createPreference2").on("click", function () {
 
         var title = $("#title").text().trim();
         var price = $("#price").html().trim();
         var unit = $("#unit").html().trim();
         var img = $("#img").html().trim();
-        price = price.replace("$","");
-        console.log("title", title)
-        console.log("price", price)
-        console.log("unit", unit)
-        console.log("img", img)
-
-        
-
-         
+        price = price.replace("$","");      
+        $('#exampleModal').modal('toggle');
+        /*$('#myModal').modal('toggle');   
         $.ajax({
             type: 'POST',
             url: 'procesar.php',
@@ -27,10 +21,10 @@ $(document).ready(function () {
             dataType: 'html',
             success: function (data) {
                 
-                window.location.href = data;
+                //window.location.href = data;
 
 
             }
-        });
+        });*/
     });
 });
