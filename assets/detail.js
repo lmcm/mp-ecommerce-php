@@ -7,6 +7,10 @@ $(document).ready(function () {
         var img = $("#img").html().trim();
         price = price.replace("$","");      
         $('#exampleModal').modal('toggle');
+
+        $('#exampleModal').on('shown.bs.modal', function() {
+            $(this).find('iframe').attr('src','http://www.google.com')
+        })  
         /*$('#myModal').modal('toggle');   
         $.ajax({
             type: 'POST',
