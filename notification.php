@@ -2,12 +2,7 @@
 
  
 $handle = curl_init('https://hookb.in/oXVXXLQkPDu1mmLaRmqM');
-
-$data = [
-    'name' => 'John'
-];
-
-$encodedData = json_encode($data);
+$encodedData = file_get_contents('php://input');//json_encode($data);
 
 curl_setopt($handle, CURLOPT_POST, 1);
 curl_setopt($handle, CURLOPT_POSTFIELDS, $encodedData);
