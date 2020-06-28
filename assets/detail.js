@@ -24,7 +24,7 @@ $(document).ready(function () {
                 img: img
             },
             contentType: "application/x-www-form-urlencoded",
-            dataType: 'html',
+            //dataType: 'html',
             success: function (data) {
                 console.log(" data" , data)
                 alert(data)
