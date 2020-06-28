@@ -28,16 +28,13 @@ $payer = new MercadoPago\Payer();
 $payer->name = "Lalo";
 $payer->surname = "Landa";
 $payer->email = "test_user_58295862@testuser.com";
-
-
-
 $payer->phone = array(
     "area_code" => "52",
     "number" => "5549737300",
 );
 $payer->address = array(
     "street_name" => "Insurgentes Sur",
-    "street_number" => "1602",
+    "street_number" => 1602,
     "zip_code" => "03940",
 );
 
@@ -64,7 +61,7 @@ $preference->back_urls = array(
  
 
 $preference->notification_url = "https://lcastillo90-mp-commerce-php.herokuapp.com/notification.php";
-//$preference->payer = $payer;
+$preference->payer = $payer;
 $preference->save();  
 
 
