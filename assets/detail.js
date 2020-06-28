@@ -12,7 +12,7 @@ $(document).ready(function () {
         console.log("img", img)
 
         
-
+        alert("holaa")
          
         $.ajax({
             type: 'POST',
@@ -24,9 +24,9 @@ $(document).ready(function () {
                 img: img
             },
             contentType: "application/x-www-form-urlencoded",
-            //dataType: 'html',
+            dataType: 'html',
             success: function (data) {
-                alert( data)
+                alert(data)
                 
                 //window.location.href = data;
 

@@ -50,6 +50,7 @@
     <div class="stack">
         
         <div class="as-search-wrapper" role="main">
+            
             <div class="as-navtuck-wrapper">
                 <div class="as-l-fullwidth  as-navtuck" data-events="event52">
                     <div>
@@ -66,6 +67,7 @@
                     </div>
                 </div>
             </div>
+         
             <div class="as-search-results as-filter-open as-category-landing as-desktop" id="as-search-results">
 
                 <div id="accessories-tab" class="as-accessories-details">
