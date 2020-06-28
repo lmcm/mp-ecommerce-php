@@ -26,6 +26,7 @@ $(document).ready(function () {
             contentType: "application/x-www-form-urlencoded",
             dataType: 'html',
             success: function (data) {
+                console.log(" data" , data)
                 alert(data)
                 
                 //window.location.href = data;
