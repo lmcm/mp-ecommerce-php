@@ -28,6 +28,9 @@ $payer = new MercadoPago\Payer();
 $payer->name = "Lalo";
 $payer->surname = "Landa";
 $payer->email = "test_user_58295862@testuser.com";
+
+
+
 $payer->phone = array(
     "area_code" => "52",
     "number" => "5549737300",
@@ -47,6 +50,8 @@ $preference->payment_methods = array(
   ),
   "installments" => 6
 );
+
+
 $preference->auto_return = "approved";
 $preference->external_reference = "am.er.90@hotmail.com";
 
@@ -61,6 +66,8 @@ $preference->back_urls = array(
 $preference->notification_url = "https://lcastillo90-mp-commerce-php.herokuapp.com/notification.php";
 $preference->payer = $payer;
 $preference->save();  
+
+
  
 echo  $preference->init_point;
  /*
