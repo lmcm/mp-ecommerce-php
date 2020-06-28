@@ -64,7 +64,7 @@ $preference->back_urls = array(
  
 
 $preference->notification_url = "https://lcastillo90-mp-commerce-php.herokuapp.com/notification.php";
-$preference->payer = $payer;
+//$preference->payer = $payer;
 $preference->save();  
 
 
