@@ -137,7 +137,7 @@
                                             <?php echo  $_POST['unit'] ?>
                                         </p>
                                     </div>
-                                    <button id="createPreference" type="" class="mercadopago-button" >Pagar</button>
+                                    <button id="createPreference" type="" class="mercadopago-button" >Pagar compra</button>
                                 </div>
                        
                                

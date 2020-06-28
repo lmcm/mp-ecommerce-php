@@ -65,8 +65,8 @@ $preference->payer = $payer;
 $preference->save();  
 
 
- echo '<p>que onda con payer</p>';
-//echo  $preference->init_point;
+ //echo '<p>que onda con payer</p>';
+echo  $preference->init_point;
  /*
 
 echo $protocol.$_SERVER['SERVER_NAME']."/".$_POST['img'];
