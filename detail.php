@@ -82,7 +82,7 @@
                                 <div class="as-accessories-filter-tile column large-6 small-3">
 
                                     <div class="as-filter-button" aria-expanded="true" aria-controls="as-search-filters" type="button">
-                                        <a href="/" class=" as-filter-button-text">
+                                        <a  class=" as-filter-button-text">
                                             Smartphones
                                         </h2>
                                     </div>
@@ -137,7 +137,7 @@
                                             <?php echo  $_POST['unit'] ?>
                                         </p>
                                     </div>
-                                    <button id="createPreference" type="submit" class="mercadopago-button" >Pagar la compra</button>
+                                    <button id="createPreference" type="" class="mercadopago-button" >Pagar</button>
                                 </div>
                        
                                
